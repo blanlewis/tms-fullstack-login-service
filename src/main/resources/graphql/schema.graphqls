@@ -4,6 +4,6 @@ type Query {
 }
 
 type LoginResponse {
-    loginId: String
+    userId: String
     isLoggedIn: Boolean!
 }
