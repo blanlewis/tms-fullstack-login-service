@@ -1,0 +1,9 @@
+type Query {
+    login(userId: String!, password: String!): LoginResponse!
+    currentUser: LoginResponse!
+}
+
+type LoginResponse {
+    loginId: String
+    isLoggedIn: Boolean!
+}
