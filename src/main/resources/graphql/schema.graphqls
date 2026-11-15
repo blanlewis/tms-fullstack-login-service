@@ -7,3 +7,12 @@ type LoginResponse {
     userId: String
     isLoggedIn: Boolean!
 }
+
+type Mutation {
+    registerUser(userId: String!, password: String!): RegistrationResponse!
+}
+
+type RegistrationResponse {
+    userId: String
+    isStoredSuccessfully: Boolean!
+}
